@@ -2,13 +2,19 @@
 
 A local proof-intelligence prototype that converts synthetic buyer requirements, demo evidence, objections, and product gaps into a reusable proof graph.
 
-## Features
+`vivun-presales-proof-graph` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Engineering target
+
+PreSales Proof Graph: Buyer Requirements to Demo Evidence and Product Signals.
+
+## How it works
 
 - Synthetic opportunity, requirement, demo, objection, and feature-gap records.
 - Proof coverage scoring with risk-ranked next-best actions.
 - Evidence graph, decision report, and offline dashboard for stakeholder review.
 
-## Run Locally
+## Run the system
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Evidence to inspect
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Validation
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Data boundary
+
+`PreSales Proof Graph` is built for local reproduction: deterministic inputs enter the run, deterministic evidence comes out, and private data stays outside the repo.
