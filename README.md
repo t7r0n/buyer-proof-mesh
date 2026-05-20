@@ -2,7 +2,7 @@
 
 A local proof-intelligence prototype that converts synthetic buyer requirements, demo evidence, objections, and product gaps into a reusable proof graph.
 
-`buyer-proof-mesh` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+`presales-proof-graph` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
 
 ## Engineering target
 

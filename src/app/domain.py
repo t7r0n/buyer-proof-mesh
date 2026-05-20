@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'proof_score'
 PRIMARY_LABEL = 'Proof'
 CHECKS = ['unsupported product claim blocked', 'recurring product gap ranked above one-off', 'security answer requires approved evidence', 'proof coverage shown by opportunity']
 CASES = [['opp-a', 'approved_doc', 'include_proof', True, 94, 'doc:D1 demo:DEMO-2', 'approved SSO proof asset exists'], ['opp-b', 'unsupported_claim', 'block_claim', True, 28, 'call:C4', 'seller note claims feature absent from docs'], ['opp-c', 'recurring_gap', 'roadmap_gap', True, 83, 'rfp:R7 crm:O12', 'same gap appears across high-value deals'], ['opp-d', 'needs_approved_source', 'review', True, 68, 'security:S3 owner:SE-2', 'answer needs approved source evidence'], ['opp-e', 'one_off', 'deprioritize', False, 51, 'call:C9', 'low-revenue one-off customization request']]
-SLUG = 'buyer-proof-mesh'
+SLUG = 'presales-proof-graph'
 
 
 class DomainCase(BaseModel):

@@ -1,5 +1,5 @@
 [project]
-name = "buyer-proof-mesh"
+name = "presales-proof-graph"
 version = "0.1.0"
 description = "PreSales Proof Graph: Buyer Requirements to Demo Evidence and Product Signals"
 requires-python = ">=3.12"
